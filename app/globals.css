@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .active {
-    border-bottom: 4px solid #FFF;
+  border-bottom: 4px solid #fff;
 }

@@ -7,7 +7,6 @@ import {
 } from "@/components/ui/sheet";
 import { Navitems } from "./Navitems";
 
-
 export default function Navbar() {
   return (
     <>

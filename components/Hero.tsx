@@ -1,7 +1,6 @@
 import { Button } from "./ui/button";
-import { barlow, barlow_condensed } from "@/app/layout";
+import { barlow, barlow_condensed } from "@/utilities/fonts";
 import { cn } from "@/lib/utils";
-
 
 export default function Hero() {
   return (
