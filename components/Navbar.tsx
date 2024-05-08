@@ -39,7 +39,8 @@ export default function Navbar() {
           </SheetContent>
         </Sheet>
       </nav>
-      <nav className="hidden md:flex items-center justify-between mx-8 py-4 md:mr-0 lg:ml-20">
+
+      <nav className="hidden md:flex items-center justify-between mx-8 h-fit md:mr-0 lg:ml-20 xl:pt-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
           <g fill="none" fill-rule="evenodd">
             <circle cx="24" cy="24" r="24" fill="#FFF" />
@@ -49,6 +50,8 @@ export default function Navbar() {
             />
           </g>
         </svg>
+
+        <hr className="hidden relative right-[-3rem] w-[36%] bg-secondary lg:inline-block z-10"/>
 
         <Navitems />
       </nav>

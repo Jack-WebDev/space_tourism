@@ -5,3 +5,50 @@
 .active {
   border-bottom: 4px solid #fff;
 }
+
+.active_tab {
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+}
+
+.planet_image {
+  width: 50%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .planet_image {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .planet_image {
+    width: 130%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .planet_image {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.planet_image {
+  animation: rotate 70s infinite linear;
+}
