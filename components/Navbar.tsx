@@ -40,7 +40,7 @@ export default function Navbar() {
         </Sheet>
       </nav>
 
-      <nav className="hidden md:flex items-center justify-between mx-8 h-fit md:mr-0 lg:ml-20 xl:pt-4">
+      <nav className="hidden md:flex items-center justify-between backdrop-blur-[10px] mx-8 h-fit md:mr-0 lg:ml-20 xl:pt-4">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
           <g fill="none" fill-rule="evenodd">
             <circle cx="24" cy="24" r="24" fill="#FFF" />

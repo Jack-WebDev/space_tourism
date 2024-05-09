@@ -26,9 +26,15 @@ const config = {
         "hero-mobile": "url('/home/background-home-mobile.jpg')",
         "hero-tablet": "url('/home/background-home-tablet.jpg')",
         "hero-desktop": "url('/home/background-home-desktop.jpg')",
-        "destination-hero-mobile":"url('/destination/background-destination-mobile.jpg')",
-        "destination-hero-tablet":"url('/destination/background-destination-tablet.jpg')",
-        "destination-hero-desktop":"url('/destination/background-destination-desktop.jpg')"
+        "destination-hero-mobile":
+          "url('/destination/background-destination-mobile.jpg')",
+        "destination-hero-tablet":
+          "url('/destination/background-destination-tablet.jpg')",
+        "destination-hero-desktop":
+          "url('/destination/background-destination-desktop.jpg')",
+        "crew-hero-mobile": "url('/crew/background-crew-mobile.jpg')",
+        "crew-hero-tablet": "url('/crew/background-crew-tablet.jpg')",
+        "crew-hero-desktop": "url('/crew/background-crew-desktop.jpg')",
       },
       boxShadow: {
         "explore-sm": "1px 1px 1px 30px rgba(255, 255, 255, 0.2)",
@@ -39,8 +45,8 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        // background: "hsl(var(--background))",
+        // foreground: "hsl(var(--foreground))",
         primary: "#0B0D17",
         secondary: "#D0D6F9",
         destructive: {

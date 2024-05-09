@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Destination() {
   return (
-    <div className='grid text-center min-h-screen bg-destination-hero-mobile bg-no-repeat bg-cover md:bg-destination-hero-tablet lg:bg-destination-hero-desktop lg:h-[100vh]">'>
+    <div className='grid text-center min-h-screen bg-destination-hero-mobile bg-no-repeat bg-cover md:bg-destination-hero-tablet lg:bg-destination-hero-desktop lg:h-[100vh]'>
       <Navbar />
       <div className="grid justify-items-center mt-4 md:justify-items-start lg:w-[80%] lg:mx-auto">
         <h2
