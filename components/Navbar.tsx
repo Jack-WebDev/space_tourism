@@ -1,3 +1,4 @@
+"use client";
 import {
   Sheet,
   SheetContent,
@@ -6,12 +7,23 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { Navitems } from "./Navitems";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+  const router = useRouter();
+  const handleNav = () => {
+    router.push("/");
+  };
   return (
     <>
       <nav className="flex items-center justify-between mx-8 py-4 md:hidden ">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <svg
+          onClick={handleNav}
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          style={{ cursor: "pointer" }}
+        >
           <g fill="none" fill-rule="evenodd">
             <circle cx="24" cy="24" r="24" fill="#FFF" />
             <path
@@ -41,7 +53,13 @@ export default function Navbar() {
       </nav>
 
       <nav className="hidden md:flex items-center justify-between backdrop-blur-[10px] mx-8 h-fit md:mr-0 lg:ml-20 xl:pt-4">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+        <svg
+          onClick={handleNav}
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          style={{ cursor: "pointer" }}
+        >
           <g fill="none" fill-rule="evenodd">
             <circle cx="24" cy="24" r="24" fill="#FFF" />
             <path
@@ -51,7 +69,7 @@ export default function Navbar() {
           </g>
         </svg>
 
-        <hr className="hidden relative right-[-3rem] w-[36%] bg-secondary lg:inline-block z-10"/>
+        <hr className="hidden relative right-[-3rem] w-[36%] bg-secondary lg:inline-block z-10" />
 
         <Navitems />
       </nav>

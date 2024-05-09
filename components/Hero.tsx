@@ -1,8 +1,14 @@
+"use client";
 import { Button } from "./ui/button";
 import { barlow, barlow_condensed } from "@/utilities/fonts";
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
 export default function Hero() {
+  const router = useRouter();
+  const handleExplore = () => {
+    router.push("/destination");
+  };
   return (
     <div className="text-white text-center mt-8 mx-8 md:mt-24 lg:flex lg:justify-between lg:items-baseline lg:w-[70%] lg:mx-auto lg:mt-4">
       <div className="lg:text-start lg:w-1/2">
@@ -28,6 +34,7 @@ export default function Hero() {
         </p>
       </div>
       <Button
+        onClick={handleExplore}
         variant={"default"}
         className="rounded-full bg-white text-black text-[20px] w-[150px] h-full aspect-[1] translate-y-12 transition-shadow ease-in-out duration-1000 hover:shadow-explore-sm hover:bg-white md:w-[242px] md:translate-y-[60%] md:hover:shadow-explore-md lg:w-[272px] lg:text-[32px] lg:hover:shadow-explore-lg"
       >

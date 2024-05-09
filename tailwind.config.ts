@@ -35,6 +35,9 @@ const config = {
         "crew-hero-mobile": "url('/crew/background-crew-mobile.jpg')",
         "crew-hero-tablet": "url('/crew/background-crew-tablet.jpg')",
         "crew-hero-desktop": "url('/crew/background-crew-desktop.jpg')",
+        "technology-hero-mobile": "url('/technology/background-technology-mobile.jpg')",
+        "technology-hero-tablet": "url('/technology/background-technology-tablet.jpg')",
+        "technology-hero-desktop": "url('/technology/background-technology-desktop.jpg')",
       },
       boxShadow: {
         "explore-sm": "1px 1px 1px 30px rgba(255, 255, 255, 0.2)",
